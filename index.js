@@ -4,7 +4,7 @@ const urlBase = "https://foodish-api.herokuapp.com/images/"
 const filterFoodType = document.getElementById("filterFoods");
 
 // county displayed item
-const productCounter = document.getElementById("product-count")
+const productCounter = document.getElementById("header")
 const foodDiv = document.querySelector('.food-container')
 let foodType = ""
 
@@ -59,16 +59,3 @@ function renderHTML(webLinks) {
     })
       foodDiv.innerHTML += foodHTML
 }
-
-
-// do { 
-//   getProducts().then(renderHTML).catch(e => console.error(e))
-//   productId += 1
-//   }
-// while (productId < maxFood)
-
-{/* <h3 class="product-line">Product ID: ${item.basic.productId}</h3>
-            <h3 class="product-line">Name: ${item.basic.productShortName}</h3>
-            <h3 class="product-line">ABV: ${item.basic.alcoholContent}%</h3>
-            <h3 class="product-line">Price (NOK): ${item.prices[0].salesPrice}<h3>
-            <h3 class="product-line">Price per litre (NOK): ${item.prices[0].salesPricePrLiter}<h3></h3> */}

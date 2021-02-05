@@ -1,0 +1,16 @@
+Add pagination - only get the displayed foods
+Randomly generate a food description
+
+app pagination
+make radio buttons pretty
+delete undeeded stuff from css
+
+finsish then clone to make a new on using reciepe puppy
+
+http://www.recipepuppy.com/about/api/
+https://mixedanalytics.com/blog/list-actually-free-open-no-auth-needed-apis/
+Name
+Ingredients
+Description
+Image Url
+http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet 

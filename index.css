@@ -1,21 +1,18 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Old+Standard+TT&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
 
 :root {
   --black: rgba(0,0,16,.8);
-  --yale-blue: #054a91ff;
-  --steel-blue: #3e7cb1ff;
-  --iceberg: #81a4cdff;
-  --alice-blue: #dbe4eeff;
-  --heat-wave: #f17300ff;
-}
-
-#filterFoods {
-  background-color: green;
+  --color1:  #D56800;
+  --color2:  #AD6A3F;
+  --color3: #D7B751;
+  --color4:  #B72A27;
+  --color5: #3E1C00;
 }
 
 body, 
 html {
+  font-family: 'Yatra One', cursive;
   height: 100%;
   width: 100%;
   margin: 0 auto;
@@ -25,70 +22,57 @@ html {
 
 header {
   padding: 1rem 2rem;
-  background-color: var(--steel-blue);
-  color: var(--alice-blue);
-  font-size: 2rem;
+  background-color: var(--color1);
+  color: var(--color5);
+  font-size: 3rem;
   font-weight: bold;
   text-align: center;
 }
 
-.main-container{
-  padding: 1rem 2rem;
+/*Choose Food*/
+
+#form-container {
+  padding: .5rem;
+  border: border-bottom: 5px solid red;
 }
 
-.form-container {
-  padding: 1rem 2rem;
-}
-
-.food-container {
-  background-color: white;
-}
-
-/*filters*/
-
-.card {
-  display: flex;
-  background-color: white;
-  border: 1px black solid;
-}
-
-.filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minxmax(300px, 1fr));
-  grid-gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.filter-card {
-  padding: .8rem;
-}
-
-.filter-container {
-  padding: .4rem .8rem;
-}
-
-.filter {
-  background-color: var(--black);
-  padding: .4rem .4rem .1rem .4rem;
-  border: 3px solid var(--blue);
-  border-radius: 2.2rem;
-}
-
-.filter-form {
+.radio-card{
   display: flex;
   align-items: center;
 }
 
-.filter-all + span {
-  font-size: 1.2 rem;
-  padding: .5rem 1rem;
-  color: var(--off-white);
+[type=radio] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
-#product-count {
-  margin: 0 auto;
-  background-color:pink;
+[type=radio] + img {
+  cursor: pointer;
+}
+
+[type=radio] + img:hover {
+  opacity: 0.3;
+}
+
+.label-text {
+  font-size: 2rem;
+  margin: 1.7em;
+  display: block;
+  position: absolute;
+  background-color: rgba(192,192,192,0.75);
+}
+
+#form-container{
+  display: grid;
+  background-color: var(--color4);
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 1rem;
+  background-color: var(--color4);
+  align-items: center;
   text-align: center;
+  grid-gap: .5rem;
 }
 
 /*Product Display*/
@@ -98,7 +82,7 @@ header {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: auto;
   grid-gap: 1rem;
-  background-color: var(--steel-blue);
+  background-color: var(--color2);
   padding: 1rem;
 }
 
@@ -106,7 +90,7 @@ header {
   display: grid;
   padding: .3rem;
   grid-auto-columns: 1fr;
-  background-color: var(--iceberg);
+  background-color: var(--color3);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
