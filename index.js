@@ -50,7 +50,7 @@ function renderHTML(webLinks) {
     let productCount = 0
     webLinks.forEach(item => 
       { productCount ++
-        productCounter.innerHTML = `${productCount} ${foodType}'s displayed.`
+        productCounter.innerHTML = `${productCount} ${foodType}s displayed.`
         foodHTML += `
         <div class='product-wrapper'>
             <img src="${item}" class="product-image" alt="image of product">
