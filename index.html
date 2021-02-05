@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>Food Mood!</header>
+    <form id="filterFoods">
+        <p>What's Your Food Mood?</p>
+    <div id="form-container"></div>
+        <input type="radio"
+               id="pizza"
+               name="foodtype"
+               value="pizza">
+        <label for="pizza">Pizza</label>
+
+        <input type="radio"
+               id="burger"
+               name="foodtype"
+               value="burger">
+        <label for="burger">Burger</label>
+
+        <input type="radio"
+               id="dosa"
+               name="foodtype"
+               value="dosa">
+        <label for="dosa">Dosa</label>
+
+        <input type="radio"
+               id="idly"
+               name="foodtype"
+               value="idly">
+        <label for="idly">Idly</label>
+
+        <input type="radio"
+               id="biryani"
+               name="foodtype"
+               value="biryani">
+        <label for="biryani">Biryani</label>
+    </div>
+    </form>
+    <div id="product-count">0 foods displayed. Choose your food mood.</div>
+    <div class="food-container">
+    </div> 
+
+    <script src="index.js"></script>
+    </body>
+</html>
